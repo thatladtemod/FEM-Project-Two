@@ -16,6 +16,55 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      @font-face {
+        font-family: 'Figtree';
+        src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype'),
+          url(assets/fonts/static/Figtree-SemiBold.ttf) format('truetype'),
+          url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype'),
+          url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Fitree', sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: hsl(47, 88%, 63%);
+      }
+
+      .card_container {
+        background: azure;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        padding: 20px;
+      }
+
+      .thumbnail {
+        width: 300px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .tag {
+        width: 75px;
+        background: hsl(47, 88%, 63%);
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: 800;
+        border-radius: 5px;
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -27,8 +76,11 @@
   </head>
   <body>
     <div class="card_container">
-
-      <img src="" alt="" />
+      <img
+        class="thumbnail"
+        src="images/illustration-article.svg"
+        alt="Blog's thumbnail"
+      />
 
       <p class="tag">Learning</p>
       <p class="description">Published 21 Dec 2023</p>
@@ -36,24 +88,25 @@
       <h3>HTML & CSS foundations</h3>
 
       <article>
-        These languages arethe backbone of every website, defining structure,
+        These languages are the backbone of every website, defining structure,
         content, and presentation.
       </article>
 
       <footer>
-        <img src="" alt="">
+        <img
+          class="avatar"
+          src="images/image-avatar.webp"
+          alt="Author's avatar"
+        />
         <span>Greg Hooper</span>
       </footer>
-
     </div>
 
-    
-
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>
